@@ -5,7 +5,7 @@
   Ayon Roy
 </h1>
 <p align="center">
-  Personal Portfolio <a href="https://ayon.netlify.com/" target="_blank">ayon.netlify.com/</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  Personal Portfolio <a href="https://ayon.netlify.com/" target="_blank">ayon.netlify.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 <p align="center">
   <a href="https://app.netlify.com/sites/ayon/deploys" target="_blank">

@@ -4,7 +4,7 @@ module.exports = {
     'Ayon Roy is a Computer Science and Engineering(CSE) student based in Dhaka, Bangladesh who specializes in developing exceptional, high-quality websites and applications and also specializes in Machine Learning and DeepLearning.',
   siteKeywords:
     'Ayon Roy, Ayon, Ayon, royayon, software engineer, front-end engineer, web developer, javascript, dhaka, bangladesh, ML, DL, backend developper',
-  siteUrl: 'https://ayon.netlify.com/',
+  siteUrl: 'https://ayonroy.com/',
   siteLanguage: 'en_US',
   googleAnalyticsID: '',
   googleVerification: '',

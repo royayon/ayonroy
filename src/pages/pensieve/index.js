@@ -124,7 +124,7 @@ const PensievePage = ({ location, data }) => {
     <Layout location={location}>
       <Helmet>
         <title>Pensieve | Ayon Roy</title>
-        <link rel="canonical" href="https://ayon.netlify.com/" />
+        <link rel="canonical" href="https://ayonroy.com/" />
       </Helmet>
 
       <StyledMainContainer>

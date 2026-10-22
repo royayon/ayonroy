@@ -1,11 +1,18 @@
-# Project dependencies
-.cache
-node_modules
-yarn-error.log
-package-lock.json
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
 
-# Build directory
-/public
+# Next.js build output
+.next/
+out/
+
+# Caches
+.cache/
+*.log
+
+# OS & IDE
 .DS_Store
-
+Thumbs.db
 .vscode/
+.idea/

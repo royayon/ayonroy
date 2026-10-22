@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('/fonts/Calibre/Calibre-Light.woff2') format('woff2'),
+       url('/fonts/Calibre/Calibre-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('/fonts/Calibre/Calibre-Regular.woff2') format('woff2'),
+       url('/fonts/Calibre/Calibre-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('/fonts/Calibre/Calibre-Medium.woff2') format('woff2'),
+       url('/fonts/Calibre/Calibre-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('/fonts/Calibre/Calibre-Semibold.woff2') format('woff2'),
+       url('/fonts/Calibre/Calibre-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  src: url('/fonts/SFMono/SFMono-Regular.woff2') format('woff2'),
+       url('/fonts/SFMono/SFMono-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  src: url('/fonts/SFMono/SFMono-Medium.woff2') format('woff2'),
+       url('/fonts/SFMono/SFMono-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  src: url('/fonts/SFMono/SFMono-Semibold.woff2') format('woff2'),
+       url('/fonts/SFMono/SFMono-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+::selection {
+  background-color: rgba(41, 61, 90, 0.99);
+  color: #ccd6f6;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  background-color: #0a192f;
+  color: #8892b0;
+  font-family: 'Calibre', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #0a192f;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #233554;
+  border: 3px solid #0a192f;
+  border-radius: 10px;
+}
+
+.numbered-heading {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 10px 0 40px;
+  width: 100%;
+  font-size: clamp(26px, 5vw, 32px);
+  font-weight: 600;
+  color: #ccd6f6;
+  white-space: nowrap;
+}
+
+.numbered-heading::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -2px;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #233554;
+}
+
+@media (max-width: 768px) {
+  .numbered-heading::after {
+    width: 100%;
+  }
+}
+
+.numbered-heading span.number {
+  margin-right: 10px;
+  color: #64ffda;
+  font-family: 'SF Mono', monospace;
+  font-size: clamp(16px, 3vw, 20px);
+  font-weight: 400;
+}
+
+.btn-teal {
+  color: #64ffda;
+  background-color: transparent;
+  border: 1px solid #64ffda;
+  border-radius: 4px;
+  padding: 0.75rem 1.75rem;
+  font-family: 'SF Mono', monospace;
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  display: inline-block;
+}
+
+.btn-teal:hover, .btn-teal:focus {
+  background-color: rgba(100, 255, 218, 0.1);
+  outline: none;
+  transform: translateY(-2px);
+}
+
+.btn-teal-sm {
+  color: #64ffda;
+  background-color: transparent;
+  border: 1px solid #64ffda;
+  border-radius: 4px;
+  padding: 0.6rem 1rem;
+  font-family: 'SF Mono', monospace;
+  font-size: 13px;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  display: inline-block;
+}
+
+.btn-teal-sm:hover, .btn-teal-sm:focus {
+  background-color: rgba(100, 255, 218, 0.1);
+  outline: none;
+}

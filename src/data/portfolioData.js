@@ -70,20 +70,20 @@ export const portfolioData = {
     title: 'About Me',
     paragraphs: [
       "Hello! I'm Ayon, a Ph.D. Candidate in Computer Science at the University of Texas at Arlington. My research centers around machine learning, self-supervised representation learning from multi-modal vision data (images, EEG, EDA, LiDAR), and cognitive state assessment.",
-      'Before starting my doctoral journey at UTA, I earned my B.Sc. in Computer Science and Engineering from the Military Institute of Science and Technology (MIST) in 2020. I also spent over 2 years in industry as a Full Stack Developer at Techzu and Machine Learning Engineer at NetraDigital, designing scalable backends and intelligent automated workflows.',
+      'Before starting my doctoral journey at UTA, I earned my B.Sc. in Computer Science and Engineering from the Military Institute of Science and Technology (MIST) in 2020. I also gained strong industry experience as a Data Analytics Intern at Trinity Industries, a Full Stack Developer at Techzu, and a Machine Learning Engineer at NetraDigital, building predictive ML pipelines, scalable full-stack backends, and intelligent automated workflows.',
       "Today, I'm passionate about developing Generative AI, agentic workflows, and assistive technologies that bridge the gap between human cognition and intelligent machines. Here are some of the technologies I've been working with recently:",
     ],
     skills: [
       'Python & PyTorch',
+      'Databricks & MLflow',
+      'LLMs, Ollama & Agentic AI (n8n)',
+      'CatBoost & Ensemble Learning',
       'TensorFlow & Scikit-learn',
-      'Next.js & React',
-      'TypeScript & JavaScript',
+      'Next.js, React & TypeScript',
       'Multi-modal Vision (EEG, EDA, LiDAR)',
-      'Agentic AI, Ollama & n8n',
       'Node.js & Django',
-      'PostgreSQL & MongoDB',
-      'Docker & Kubernetes',
-      'C, C++ & Java',
+      'PostgreSQL, MongoDB & DynamoDB',
+      'Docker, Kubernetes & Git',
     ],
     image: '/images/me.jpg',
   },
@@ -99,6 +99,17 @@ export const portfolioData = {
         'Conducting research on self-supervised representation learning from multi-modal vision data including images, EEG, EDA, and LiDAR.',
         'Developed a Residual Graph Convolutional Network (ResGCN) to detect cognitive fatigue levels from human gait cycle data reflecting walking patterns.',
         'Graduate Teaching Assistant for intermediate C, Java, and Object-Oriented Programming (OOP) courses.',
+      ],
+    },
+    {
+      title: 'Data Analytics Intern',
+      company: 'Trinity Industries',
+      location: 'Dallas, TX, USA',
+      range: 'May 2026 – July 2026',
+      url: 'https://www.trin.net/',
+      duties: [
+        'Built and deployed an end-to-end LLM + ML system that automated multi-output repair-cost classification, pairing Claude Sonnet clause extraction over 1,292 OCR-parsed lease contracts with a CatBoost ensemble trained on 4M+ records, deployed to a Databricks/MLflow serving endpoint that scored 62,715 line items and replaced manual analyst review.',
+        'Built and optimized a 4-model ensemble forecasting railcar out-dates on Databricks, engineering 60+ features and combining KMeans segmentation (automated k via knee detection), CatBoost classifiers, and per-cluster random forests that return prediction intervals, routing each car to its best-fit sub-model for daily confidence-bounded forecasts used by shop operations.',
       ],
     },
     {
@@ -180,6 +191,16 @@ export const portfolioData = {
   ],
 
   otherProjects: [
+    {
+      title: 'Contract Clause Extraction & Repair-Cost Classifier',
+      description:
+        'An enterprise LLM + ML serving pipeline pairing Claude Sonnet clause extraction over 1,292 OCR-parsed lease contracts with a CatBoost ensemble trained on 4M+ records on Databricks/MLflow.',
+      tech: ['Databricks', 'MLflow', 'Claude Sonnet', 'CatBoost', 'Python'],
+      github: '',
+      external: 'https://www.trin.net/',
+      year: '2026',
+      company: 'Trinity Industries',
+    },
     {
       title: 'Custom VCS (AynHUB)',
       description:

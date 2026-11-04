@@ -43,18 +43,27 @@ export const IconLoader = () => (
     id="logo"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 100 100"
-    className="w-full h-full block mx-auto select-none"
+    width="100"
+    height="100"
+    className="select-none"
+    style={{
+      width: '100px',
+      height: '100px',
+      display: 'block',
+      transformOrigin: '50% 50%',
+    }}
   >
     <title>Loader Logo</title>
     <g>
-      <g id="B" transform="translate(11.000000, 5.000000)" style={{ opacity: 0 }}>
+      <g id="B" style={{ opacity: 0 }}>
         <text
-          x="38"
-          y="58"
+          x="50"
+          y="52"
           textAnchor="middle"
+          dominantBaseline="central"
           fill="#64FFDA"
-          fontSize="50"
-          fontFamily="'Calibre', -apple-system, sans-serif"
+          fontSize="48"
+          fontFamily="'Calibre', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
           fontWeight="normal"
         >
           A

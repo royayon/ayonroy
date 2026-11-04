@@ -117,8 +117,8 @@ export default function Navbar() {
       />
 
       <aside
-        className={`fixed top-0 bottom-0 right-0 w-[min(75vw,350px)] bg-lightNavy shadow-2xl z-40 flex flex-col justify-center items-center px-6 transition-transform duration-300 md:hidden ${
-          menuOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`fixed top-0 bottom-0 right-0 w-[min(75vw,350px)] bg-lightNavy shadow-2xl z-40 flex flex-col justify-center items-center px-6 transition-all duration-300 md:hidden ${
+          menuOpen ? 'translate-x-0 opacity-100 visible pointer-events-auto' : 'translate-x-full opacity-0 invisible pointer-events-none'
         }`}
       >
         <nav className="flex flex-col items-center space-y-6 font-mono text-sm text-lightestSlate w-full">

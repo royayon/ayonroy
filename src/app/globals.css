@@ -72,11 +72,15 @@ html {
   color: #ccd6f6;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 body {
   margin: 0;
   width: 100%;
   min-height: 100%;
-  overflow-x: hidden;
   background-color: #0a192f;
   color: #8892b0;
   font-family: 'Calibre', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
@@ -125,6 +129,7 @@ body {
 @media (max-width: 768px) {
   .numbered-heading::after {
     width: 100%;
+    margin-left: 10px;
   }
 }
 

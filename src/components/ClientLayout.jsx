@@ -14,29 +14,29 @@ export default function ClientLayout({ children }) {
 
   useEffect(() => {
     if (isLoading && isHome) {
+      window.scrollTo(0, 0);
       document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = 'auto';
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
     }
   }, [isLoading, isHome]);
 
   return (
     <>
-      {isLoading && isHome && (
+      {isLoading && isHome ? (
         <Loader finishLoading={() => setIsLoading(false)} />
+      ) : (
+        <div className="min-h-screen">
+          <Navbar />
+          <SocialDocks />
+          <main id="content" className="min-h-screen">
+            {children}
+          </main>
+          <Footer />
+        </div>
       )}
-      <div
-        className={`transition-opacity duration-700 ${
-          isLoading && isHome ? 'opacity-0' : 'opacity-100'
-        }`}
-      >
-        <Navbar />
-        <SocialDocks />
-        <main id="content" className="min-h-screen">
-          {children}
-        </main>
-        <Footer />
-      </div>
     </>
   );
 }

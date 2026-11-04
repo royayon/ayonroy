@@ -4,32 +4,75 @@ import React from 'react';
 
 export const IconLogo = () => (
   <svg
-    id="logo"
     xmlns="http://www.w3.org/2000/svg"
+    role="img"
     viewBox="0 0 84 96"
-    className="w-10 h-10 fill-none stroke-green stroke-2 transition-all duration-300 hover:fill-transGreen"
+    className="w-full h-full select-none"
   >
-    <g transform="translate(-8.000000, -2.000000)">
+    <title>Logo</title>
+    <g id="Logo" transform="translate(-8.000000, -2.000000)">
       <g transform="translate(11.000000, 5.000000)">
         <polygon
           id="Shape"
-          stroke="#64ffda"
+          stroke="#64FFDA"
           strokeWidth="5"
           strokeLinecap="round"
           strokeLinejoin="round"
+          fill="none"
+          className="transition-all duration-300"
           points="39 0 0 22 0 67 39 90 78 68 78 23"
         />
         <text
-          x="28"
-          y="62"
-          fill="#64ffda"
-          fontSize="46"
+          x="38"
+          y="58"
+          textAnchor="middle"
+          fill="#64FFDA"
+          fontSize="50"
           fontFamily="'Calibre', -apple-system, sans-serif"
-          fontWeight="bold"
+          fontWeight="normal"
         >
           A
         </text>
       </g>
+    </g>
+  </svg>
+);
+
+export const IconLoader = () => (
+  <svg
+    id="logo"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 100 100"
+    className="w-full h-full block mx-auto select-none"
+  >
+    <title>Loader Logo</title>
+    <g>
+      <g id="B" transform="translate(11.000000, 5.000000)" style={{ opacity: 0 }}>
+        <text
+          x="38"
+          y="58"
+          textAnchor="middle"
+          fill="#64FFDA"
+          fontSize="50"
+          fontFamily="'Calibre', -apple-system, sans-serif"
+          fontWeight="normal"
+        >
+          A
+        </text>
+      </g>
+      <path
+        stroke="#64FFDA"
+        strokeWidth="5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+        d="M 50, 5
+           L 11, 27
+           L 11, 72
+           L 50, 95
+           L 89, 73
+           L 89, 28 z"
+      />
     </g>
   </svg>
 );

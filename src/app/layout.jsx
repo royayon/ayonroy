@@ -1,7 +1,5 @@
 import './globals.css';
-import Navbar from '../components/Navbar';
-import SocialDocks from '../components/SocialDocks';
-import Footer from '../components/Footer';
+import ClientLayout from '../components/ClientLayout';
 import { portfolioData } from '../data/portfolioData';
 
 export const metadata = {
@@ -48,12 +46,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
       <body className="bg-navy text-slate antialiased selection:bg-slate/30 selection:text-white">
-        <Navbar />
-        <SocialDocks />
-        <main id="content" className="min-h-screen">
-          {children}
-        </main>
-        <Footer />
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );

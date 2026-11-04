@@ -50,8 +50,14 @@ export default function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 sm:px-10 lg:px-12 h-20 sm:h-24 flex items-center justify-between ${navClass()}`}
     >
-      <Link href="/" aria-label="home" className="hover:opacity-85 transition-opacity">
-        <IconLogo />
+      <Link
+        href="/"
+        aria-label="home"
+        className="group block w-[42px] h-[42px] text-green transition-all duration-300"
+      >
+        <div className="w-full h-full group-hover:[&_polygon]:fill-transGreen transition-all duration-300">
+          <IconLogo />
+        </div>
       </Link>
 
       {/* Desktop Navigation */}

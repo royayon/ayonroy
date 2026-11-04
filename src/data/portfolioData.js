@@ -85,7 +85,7 @@ export const portfolioData = {
       'PostgreSQL, MongoDB & DynamoDB',
       'Docker, Kubernetes & Git',
     ],
-    image: '/images/me.jpg',
+    image: '/images/headshot.png',
   },
 
   jobs: [

@@ -67,7 +67,7 @@ export default function ArchivePage() {
       company: 'MIST',
       tech: ['Node.js', 'Express', 'TensorFlow.js', 'Deep Learning'],
       github: 'https://github.com/royayon',
-      external: '',
+      external: 'https://doi.org/10.1007/978-981-16-3675-2_19',
     },
     {
       year: '2020',

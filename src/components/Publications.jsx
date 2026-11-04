@@ -15,9 +15,19 @@ export default function Publications() {
 
       {/* Publications List */}
       <div className="space-y-8 mb-16">
-        <h3 className="text-xl font-bold text-lightestSlate flex items-center space-x-2">
-          <span>Peer-Reviewed Research</span>
-        </h3>
+        <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 border-b border-lightNavy/50 pb-3">
+          <h3 className="text-xl font-bold text-lightestSlate flex items-center space-x-2">
+            <span>Peer-Reviewed Research</span>
+          </h3>
+          <a
+            href={portfolioData.siteMetadata.scholar}
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            className="font-mono text-xs text-green hover:underline inline-flex items-center space-x-1"
+          >
+            <span>Google Scholar Profile &rarr;</span>
+          </a>
+        </div>
 
         {publications.map((pub, idx) => (
           <div

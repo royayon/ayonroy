@@ -12,7 +12,7 @@ export const portfolioData = {
     phone: '682-405-5280',
     github: 'https://github.com/royayon',
     linkedin: 'https://www.linkedin.com/in/royayon',
-    scholar: 'https://scholar.google.com/citations?view_op=search_authors&mauthors=Ayon+Roy+Arlington',
+    scholar: 'https://scholar.google.com/citations?user=EXovW5IAAAAJ&hl=en',
     twitterHandle: '@helloAyon',
   },
 
@@ -29,7 +29,7 @@ export const portfolioData = {
     },
     {
       name: 'Google Scholar',
-      url: 'https://scholar.google.com/citations?view_op=search_authors&mauthors=Ayon+Roy+Arlington',
+      url: 'https://scholar.google.com/citations?user=EXovW5IAAAAJ&hl=en',
       icon: 'scholar',
     },
     {
@@ -293,19 +293,19 @@ export const portfolioData = {
     },
     {
       title: 'CurFi: An automated tool to find the best regression analysis model using curve fitting',
-      venue: 'Engineering Reports (Wiley), vol. 4, no. 12, e12554',
+      venue: 'Engineering Reports (Wiley), vol. 4, no. 12, e12522',
       year: '2022',
-      doi: 'https://doi.org/10.1002/eng2.12554',
+      doi: 'https://doi.org/10.1002/eng2.12522',
       authors: 'Ayon Roy, Tausif Al Zubayer, Nafisa Tabassum, Muhammad Nazrul Islam, Md. Abdus Sattar',
       description:
         'An automated algorithmic tool evaluating and deploying the best-fit regression model on multidimensional datasets without requiring manual script training.',
     },
     {
       title: 'A Deep Learning Approach to Predict Academic Result and Recommend Study Plan for Improving Student’s Academic Performance',
-      venue: 'Ubiquitous Intelligent Systems (Springer), pp. 453–465',
+      venue: 'Ubiquitous Intelligent Systems (Springer), pp. 253–266',
       year: '2021',
-      doi: 'https://link.springer.com/chapter/10.1007/978-981-16-3675-2_35',
-      authors: 'Ayon Roy, M. N. Islam, et al.',
+      doi: 'https://doi.org/10.1007/978-981-16-3675-2_19',
+      authors: 'Ayon Roy, Md. Raqibur Rahman, Muhammad Nazrul Islam, Nafiz Imtiaz Saimon, MAqib Alfaz, Abdullah-Al-Sheak Jaber',
       description:
         'Deep learning framework modeling historical student academic performance to provide personalized study schedules and predictive grade insights.',
     },

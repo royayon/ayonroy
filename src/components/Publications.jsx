@@ -171,58 +171,60 @@ export default function Publications() {
                 key={pub.title}
                 className="p-6 rounded bg-lightNavy/70 border-l-2 border-green hover:bg-lightNavy transition-all duration-200 group"
               >
-                {/* Meta row: Venue, Year, Citations badge */}
-                <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-                  <span className="font-mono text-xs text-green tracking-wide">
-                    {pub.venue} &nbsp;&middot;&nbsp; {pub.year}
-                  </span>
+                {/* 1. Paper Title (Left) + Citation Count (Right) */}
+                <div className="flex items-start justify-between gap-3 mb-2">
+                  <h4 className="text-lg sm:text-xl font-bold text-lightestSlate group-hover:text-green transition-colors leading-snug">
+                    {pub.doi ? (
+                      <a
+                        href={pub.doi}
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        className="hover:underline"
+                      >
+                        {pub.title}
+                      </a>
+                    ) : pub.pdf ? (
+                      <a
+                        href={pub.pdf}
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        className="hover:underline"
+                      >
+                        {pub.title}
+                      </a>
+                    ) : (
+                      pub.title
+                    )}
+                  </h4>
 
                   {pub.citations !== undefined && pub.citations > 0 && (
-                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-mono font-semibold bg-green/10 text-green border border-green/30">
-                      {pub.citations} Citations
-                    </span>
+                    <div className="shrink-0 pt-0.5">
+                      <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-mono font-semibold bg-green/10 text-green border border-green/30 whitespace-nowrap shadow-sm">
+                        {pub.citations} Citations
+                      </span>
+                    </div>
                   )}
                 </div>
 
-                {/* Paper Title */}
-                <h4 className="text-lg sm:text-xl font-bold text-lightestSlate group-hover:text-green transition-colors mb-2 leading-snug">
-                  {pub.doi ? (
-                    <a
-                      href={pub.doi}
-                      target="_blank"
-                      rel="nofollow noopener noreferrer"
-                      className="hover:underline"
-                    >
-                      {pub.title}
-                    </a>
-                  ) : pub.pdf ? (
-                    <a
-                      href={pub.pdf}
-                      target="_blank"
-                      rel="nofollow noopener noreferrer"
-                      className="hover:underline"
-                    >
-                      {pub.title}
-                    </a>
-                  ) : (
-                    pub.title
-                  )}
-                </h4>
-
-                {/* Authors */}
-                <p className="text-slate text-xs sm:text-sm font-mono mb-3 leading-relaxed">
+                {/* 2. Authors */}
+                <p className="text-slate text-xs sm:text-sm font-mono mb-2 leading-relaxed">
                   {renderAuthors(pub.authors)}
                 </p>
 
-                {/* Abstract / Description */}
+                {/* 3. Conference or Journal Venue (Source) & Year */}
+                <p className="font-mono text-xs text-green tracking-wide mb-3">
+                  {pub.venue} &nbsp;&middot;&nbsp; {pub.year}
+                </p>
+
+                {/* 4. Small Details (Description / Abstract) */}
                 {pub.description && (
                   <p className="text-slate text-sm leading-relaxed mb-4">
                     {pub.description}
                   </p>
                 )}
 
-                {/* Direct Action Links: PDF, DOI, Scholar */}
-                <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-lightNavy/40">
+                {/* 5. Direct Action Links: PDF, DOI, Scholar */}
+                <div className="flex flex-wrap items-center gap-2 pt-3 border-t border-lightNavy/40">
                   {pub.pdf && (
                     <a
                       href={pub.pdf}
